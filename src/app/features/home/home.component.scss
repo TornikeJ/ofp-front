@@ -1,0 +1,48 @@
+@import '../../../assets/styles/_colors.scss';
+
+.container {
+  padding: 100px 70px;
+
+  aside {
+    margin-right: auto;
+
+    mat-card {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.card {
+  &-small {
+    max-width: 440px;
+  }
+
+  &-large {
+    max-width: 800px;
+  }
+}
+
+mat-card-header {
+  padding-bottom: 16px;
+}
+
+mat-card-content {
+  padding: 16px;
+}
+
+.date {
+  position: relative;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 60%;
+    background-color: $primary;
+  }
+}
