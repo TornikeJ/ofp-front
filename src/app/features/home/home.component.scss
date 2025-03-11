@@ -22,6 +22,21 @@
   }
 }
 
+.cover {
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    transform: scale(1);
+    transition: transform 0.4s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+}
+
 mat-card-header {
   padding-bottom: 16px;
 }

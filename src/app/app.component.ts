@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {NgOptimizedImage, UpperCasePipe} from '@angular/common';
 import {MatButton} from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
-  imports: [UpperCasePipe, MatButton, RouterOutlet],
+  imports: [UpperCasePipe, MatButton, RouterOutlet, RouterLinkActive, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

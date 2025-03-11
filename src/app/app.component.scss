@@ -35,7 +35,7 @@
         background-color: $secondary-on;
       }
 
-      &:hover {
+      &:hover, &.active {
         color: $secondary-on;
         transition: all 0.4s ease-in-out;
 
@@ -50,6 +50,11 @@
 
   .counter {
     color: $secondary-on;
+
+    .total{
+      font-size: 28px;
+      color: $primary;
+    }
   }
 }
 

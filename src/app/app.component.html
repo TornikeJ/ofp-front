@@ -108,7 +108,7 @@ m-1168 -482 c-4 -5 -24 -94 -47 -198 -22 -103 -49 -224 -60 -268 -10 -44 -48
       </div>
 
       <ul class="flex flex-center gap-4">
-        <li>
+        <li routerLinkActive="active" routerLink="/home">
           Home
         </li>
         <li>
@@ -128,7 +128,7 @@ m-1168 -482 c-4 -5 -24 -94 -47 -198 -22 -103 -49 -224 -60 -268 -10 -44 -48
   </header>
   <section class="flex-column flex-center counter">
     <h3 class="mb-3">
-      {{ 'The counter:' | uppercase }} 19 Countries
+      {{ 'The counter:' | uppercase }} <span class="total">{{19}}</span> Countries
     </h3>
     <h1 class="mb-8">
       Leave your mark on all over the world
