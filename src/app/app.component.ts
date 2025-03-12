@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
-import {NgOptimizedImage, UpperCasePipe} from '@angular/common';
+import {UpperCasePipe} from '@angular/common';
 import {MatButton} from '@angular/material/button';
 
 @Component({

@@ -1,5 +1,5 @@
 import {Component, inject} from '@angular/core';
-import {MatTab, MatTabGroup} from '@angular/material/tabs';
+import {MatTab, MatTabGroup, MatTabLabel} from '@angular/material/tabs';
 import {Observable} from 'rxjs';
 import {Destinations} from './destination.model';
 import {DestinationService} from './destination.service';
@@ -9,6 +9,7 @@ import {
   MatCardContent,
   MatCardImage,
 } from '@angular/material/card';
+import {MatBadge} from '@angular/material/badge';
 
 const Continents: { [key: string]: string } = {
   europe: 'Europe',
@@ -26,6 +27,7 @@ const Continents: { [key: string]: string } = {
     MatCard,
     MatCardContent,
     MatCardImage,
+    MatTabLabel,
   ],
   providers: [DestinationService],
   templateUrl: './destination.component.html',

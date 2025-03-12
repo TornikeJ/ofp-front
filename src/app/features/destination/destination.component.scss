@@ -1,3 +1,5 @@
+@import "../../../assets/styles/_colors.scss";
+
 .container {
   padding: 100px 70px;
 
@@ -15,10 +17,20 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 16px 2px;
+  min-height: 280px;
 }
 
 .card {
-  .cover{
+  .cover {
     max-height: 280px;
   }
+}
+
+.badge {
+  height: 24px;
+  width: 24px;
+  background: $primary;
+  border-radius: 50%;
+  align-content: center;
+  color: $secondary-on
 }

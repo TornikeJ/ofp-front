@@ -3,22 +3,30 @@
     <mat-tab-group>
       @if (destinations$ | async; as destinations) {
         @for (key of continents; track $index) {
-          <mat-tab label="{{Continents[key]}}">
+          <mat-tab>
+            <ng-template mat-tab-label>
+              {{ Continents[key] }}
+              <div class="badge ml-4">{{ destinations[key].length }}</div>
+            </ng-template>
             <section class="grid">
-              @for (destination of destinations[key]; track $index) {
-                <mat-card class="card card-small">
-                  <div class="cover">
-                    <img mat-card-image [src]="destination.image" [alt]="destination.title">
-                  </div>
-                  <div class="date">{{ destination.date }}</div>
-                  <mat-card-content class="card-content">
-                    <h4>
-                      <b>
-                        {{ destination.title }}
-                      </b>
-                    </h4>
-                  </mat-card-content>
-                </mat-card>
+              @if (destinations[key].length > 0) {
+                @for (destination of destinations[key]; track $index) {
+                  <mat-card class="card card-small">
+                    <div class="cover">
+                      <img mat-card-image [src]="destination.image" [alt]="destination.title">
+                    </div>
+                    <div class="date">{{ destination.date }}</div>
+                    <mat-card-content class="card-content">
+                      <h4>
+                        <b>
+                          {{ destination.title }}
+                        </b>
+                      </h4>
+                    </mat-card-content>
+                  </mat-card>
+                }
+              } @else {
+                <p>No destinations found</p>
               }
             </section>
           </mat-tab>
