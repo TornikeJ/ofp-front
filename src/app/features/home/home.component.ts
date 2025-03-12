@@ -20,8 +20,6 @@ import {
     MatCardActions,
     MatCardImage,
     MatCardTitle,
-    MatCardSubtitle,
-    NgOptimizedImage
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

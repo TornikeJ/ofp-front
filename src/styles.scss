@@ -4,6 +4,7 @@
 @import 'assets/styles/_colors';
 @import 'assets/styles/_spaces';
 @import 'assets/styles/_typography';
+@import 'assets/styles/_cards';
 
 html {
   @include mat.theme((
@@ -70,7 +71,7 @@ body {
   justify-content: space-between;
 }
 
-text-center{
+text-center {
   text-align: center;
 }
 
