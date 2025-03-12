@@ -1,24 +1,24 @@
 @import '../assets/styles/_colors.scss';
 
-.header-section {
-  height: 587px;
-  padding: 20px 60px;
-  background-image: url('../../public/rio.jpg');
-  background-position: center;
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.15);
-  background-blend-mode: lighten;
 
-  .logo {
-    margin-right: auto;
+header {
 
-    svg {
-      width: 90px;
-      height: 90px;
+  nav {
+    position: absolute;
+    padding: 0 60px;
+
+    .logo {
+      margin-right: auto;
+
+      svg {
+        width: 90px;
+        height: 90px;
+      }
     }
-  }
 
-  ul {
+    ul {
+    }
+
     font-weight: 500;
 
     li {
@@ -49,16 +49,8 @@
       }
     }
   }
-
-  .counter {
-    color: $secondary-on;
-
-    .total {
-      font-size: 28px;
-      color: $primary;
-    }
-  }
 }
+
 
 .container {
   width: 1440px;

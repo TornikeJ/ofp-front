@@ -1,8 +1,17 @@
 @import "../../../assets/styles/_colors.scss";
 
-.container {
-  padding: 100px 70px;
+.header-section {
+  height: 587px;
+  padding: 20px 60px;
+  background-image: url('../../../../public/plane.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.15);
+  background-blend-mode: lighten;
+  color: $secondary-fixed;
+}
 
+.container {
   aside {
     margin-right: auto;
 
@@ -22,7 +31,11 @@
 
 .card {
   .cover {
-    max-height: 280px;
+    height: 280px;
+
+    img {
+      height: 100%;
+    }
   }
 }
 

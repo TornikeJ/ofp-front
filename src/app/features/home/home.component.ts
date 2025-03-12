@@ -20,6 +20,7 @@ import {
     MatCardActions,
     MatCardImage,
     MatCardTitle,
+    UpperCasePipe,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
