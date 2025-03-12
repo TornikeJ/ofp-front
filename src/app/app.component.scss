@@ -6,6 +6,8 @@
   background-image: url('../../public/rio.jpg');
   background-position: center;
   background-size: cover;
+  background-color: rgba(255, 255, 255, 0.15);
+  background-blend-mode: lighten;
 
   .logo {
     margin-right: auto;
@@ -51,7 +53,7 @@
   .counter {
     color: $secondary-on;
 
-    .total{
+    .total {
       font-size: 28px;
       color: $primary;
     }

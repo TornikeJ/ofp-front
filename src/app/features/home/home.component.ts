@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {MatButton} from "@angular/material/button";
-import {UpperCasePipe} from "@angular/common";
+import {NgOptimizedImage, UpperCasePipe} from "@angular/common";
 import {
   MatCard,
   MatCardActions,
@@ -20,7 +20,8 @@ import {
     MatCardActions,
     MatCardImage,
     MatCardTitle,
-    MatCardSubtitle
+    MatCardSubtitle,
+    NgOptimizedImage
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
