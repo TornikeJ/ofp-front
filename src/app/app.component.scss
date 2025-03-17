@@ -2,17 +2,16 @@
 
 
 header {
-
   nav {
-    position: absolute;
     padding: 0 60px;
+    background-color: $secondary-on;
 
     .logo {
       margin-right: auto;
 
       svg {
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 100%;
       }
     }
 
@@ -34,11 +33,11 @@ header {
         bottom: -5px;
         left: 0;
         width: 0;
-        background-color: $secondary-on;
+        background-color: $primary;
       }
 
       &:hover, &.active {
-        color: $secondary-on;
+        color: $primary;
         transition: all 0.4s ease-in-out;
 
         &:after {

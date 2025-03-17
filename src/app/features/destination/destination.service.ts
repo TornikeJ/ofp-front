@@ -1,12 +1,11 @@
 import {Destinations} from './destination.model';
-import {inject} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {ApiService} from '../../core/services/api.service';
+import {Injectable} from '@angular/core';
 
-export class DestinationService {
-  private httpService = inject(HttpClient);
-
-  getCountries() {
-    return this.httpService.get<Destinations>('/api/getCountries');
+@Injectable()
+export class DestinationService extends ApiService {
+  getDestinations() {
+    return this.getData<Destinations>('getDestinations');
   }
 }
 

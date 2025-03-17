@@ -6,7 +6,8 @@
 <section class="flex container">
   <main class="w-100">
     <mat-tab-group>
-      @if (destinations$ | async; as destinations) {
+      @let destinations = destinations$ | async;
+      @if (destinations) {
         @for (key of continents; track $index) {
           <mat-tab>
             <ng-template mat-tab-label>
@@ -16,7 +17,7 @@
             <section class="grid">
               @if (destinations[key].length > 0) {
                 @for (destination of destinations[key]; track $index) {
-                  <mat-card class="card card-small">
+                  <mat-card class="card card-small" [routerLink]="['/destination', destination.title]">
                     <div class="cover">
                       <img mat-card-image [src]="destination.image" [alt]="destination.title">
                     </div>
