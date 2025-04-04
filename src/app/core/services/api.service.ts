@@ -5,9 +5,13 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export abstract class ApiService {
-  private baseUrl = 'api';
+  private baseUrl = 'assets';
 
   private http = inject(HttpClient);
+
+  getBlog(endpoint: string) {
+    return this.http.get(`/${this.baseUrl}/${endpoint}`, {responseType: 'text'});
+  }
 
   getData<T>(endpoint: string) {
     return this.http.get<T>(`/${this.baseUrl}/${endpoint}`);

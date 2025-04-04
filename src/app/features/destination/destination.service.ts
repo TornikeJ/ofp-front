@@ -5,7 +5,7 @@ import {Injectable} from '@angular/core';
 @Injectable()
 export class DestinationService extends ApiService {
   getDestinations() {
-    return this.getData<Destinations>('getDestinations');
+    return this.getData<Destinations>('blogs/summary.json');
   }
 }
 

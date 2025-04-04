@@ -1,8 +1,7 @@
 export interface Destination {
   title: string;
-  image: string;
+  cover: string;
   date: string;
-  blog: string[];
 }
 
 export interface Destinations {
