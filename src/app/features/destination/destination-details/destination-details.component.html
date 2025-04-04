@@ -1,0 +1,11 @@
+<section class="header-section flex flex-center mb-8" style="background-image: url({{ destinationData?.cover }})">
+  <h1>
+    {{ destinationData?.title }}
+  </h1>
+</section>
+<section class="flex container">
+  <main class="w-100 flex-column gap-5">
+    <markdown [data]="markdownContent" class="markdown">
+    </markdown>
+  </main>
+</section>
