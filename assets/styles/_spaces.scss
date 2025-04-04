@@ -1,0 +1,87 @@
+// Spacing Utilities (4px system)
+
+//Flex gap
+@mixin gap($size) {
+  gap: $size * 4px;
+}
+
+// Padding
+@mixin p($size) {
+  padding: $size * 4px;
+}
+
+@mixin pt($size) {
+  padding-top: $size * 4px;
+}
+
+@mixin pb($size) {
+  padding-bottom: $size * 4px;
+}
+
+@mixin pl($size) {
+  padding-left: $size * 4px;
+}
+
+@mixin pr($size) {
+  padding-right: $size * 4px;
+}
+
+// Margin
+@mixin m($size) {
+  margin: $size * 4px;
+}
+
+@mixin mt($size) {
+  margin-top: $size * 4px;
+}
+
+@mixin mb($size) {
+  margin-bottom: $size * 4px;
+}
+
+@mixin ml($size) {
+  margin-left: $size * 4px;
+}
+
+@mixin mr($size) {
+  margin-right: $size * 4px;
+}
+
+//Generate Classes
+@for $i from 1 through 8 {
+  .gap-#{$i} {
+    @include gap($i);
+  }
+
+  .p-#{$i} {
+    @include p($i);
+  }
+  .pt-#{$i} {
+    @include pt($i);
+  }
+  .pb-#{$i} {
+    @include pb($i);
+  }
+  .pl-#{$i} {
+    @include pl($i);
+  }
+  .pr-#{$i} {
+    @include pr($i);
+  }
+
+  .m-#{$i} {
+    @include m($i);
+  }
+  .mt-#{$i} {
+    @include mt($i);
+  }
+  .mb-#{$i} {
+    @include mb($i);
+  }
+  .ml-#{$i} {
+    @include ml($i);
+  }
+  .mr-#{$i} {
+    @include mr($i);
+  }
+}
