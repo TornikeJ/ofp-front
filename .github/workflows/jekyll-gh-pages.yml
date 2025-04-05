@@ -33,23 +33,15 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Adjust according to the version you're using locally
+          node-version: '20.18.3'  # Adjust according to the version you're using locally
 
       # Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Run prebuild script
-      - name: Run prebuild
-        run: npm run prebuild
-
       # Build the Angular project
       - name: Build Angular project
         run: npm run build
-
-      # Run postbuild script (generate sitemap)
-      - name: Run postbuild
-        run: npm run postbuild
 
       # Upload artifact for deployment
       - name: Upload artifact
