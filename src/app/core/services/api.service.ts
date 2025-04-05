@@ -10,10 +10,10 @@ export abstract class ApiService {
   private http = inject(HttpClient);
 
   getBlog(endpoint: string) {
-    return this.http.get(`/${this.baseUrl}/${endpoint}`, {responseType: 'text'});
+    return this.http.get(`${this.baseUrl}/${endpoint}`, {responseType: 'text'});
   }
 
   getData<T>(endpoint: string) {
-    return this.http.get<T>(`/${this.baseUrl}/${endpoint}`);
+    return this.http.get<T>(`${this.baseUrl}/${endpoint}`);
   }
 }

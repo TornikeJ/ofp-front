@@ -5,10 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "prebuild": "node generate-json-summary.js",
-    "build": "ng build --base-href \"https://tornikej.github.io/ofp-front/\"",
+    "build": "ng build --base-href \"/ofp-front/\"\n",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "generate-sitemap": "node generate-sitemap.js",
+    "postbuild": "node generate-sitemap.js",
     "publish": "ngh --dir=dist/ofp-front/browser"
   },
   "private": true,
