@@ -43,11 +43,18 @@ jobs:
       - name: Build Angular project
         run: npm run build
 
+      # Build the Angular project
+      - name: Rebuild sitemap
+        run: npm run postbuild
+
       # Upload artifact for deployment
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          branch: gh-pages # Deploy to the gh-pages branch
+          clean: true # Optional: clean previous files before deploying
           path: dist/ofp-front/browser
+
 
   deploy:
     environment:
