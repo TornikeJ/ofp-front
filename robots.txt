@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tornikej.github.io/ofp-front/sitemap.xml
